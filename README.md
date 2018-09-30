@@ -1,5 +1,6 @@
 # VeriffTest
 VeriffTest | VIPER | Dependency Injection (used Swinject library) | Veriff iOS SDK
 
-Installation instruction
-Please, make a "pod install" in Terminal.
+Veriff Challenge Project
+Installing steps:
+Open Terminal and run "pod install" to install third party libraries.

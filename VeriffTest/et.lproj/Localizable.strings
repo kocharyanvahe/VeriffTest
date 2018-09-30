@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  VeriffTest
+
+  Created by Vahe on 9/29/18.
+  Copyright © 2018 Vahe. All rights reserved.
+*/
+
+"alert.title" = "Hoiatus!";
+"scan.qr.code" = "Algul peate skannima QR-koodi. Palun skannige see!";
+"open.app.title" = "Avatud Taotlus";
+"confirm.title" = "Kinnita";
+"cancel.title" = "Loobu";
+"ok.title" = "Okei";
+"token.question" = "Kas soovite kasutada seda tokenit?";

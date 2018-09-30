@@ -1,0 +1,6 @@
+framework module Veriff {
+  umbrella header "Veriff.h"
+
+  export *
+  module * { export * }
+}

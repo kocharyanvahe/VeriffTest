@@ -1,0 +1,21 @@
+
+/* Class = "UISegmentedControl"; 8s6-3y-hAN.segmentTitles[0] = "Sandbox"; ObjectID = "8s6-3y-hAN"; */
+"8s6-3y-hAN.segmentTitles[0]" = "Sandbox";
+
+/* Class = "UISegmentedControl"; 8s6-3y-hAN.segmentTitles[1] = "Staging"; ObjectID = "8s6-3y-hAN"; */
+"8s6-3y-hAN.segmentTitles[1]" = "Staging";
+
+/* Class = "UISegmentedControl"; 8s6-3y-hAN.segmentTitles[2] = "Production"; ObjectID = "8s6-3y-hAN"; */
+"8s6-3y-hAN.segmentTitles[2]" = "Production";
+
+/* Class = "UINavigationItem"; title = "Veriff"; ObjectID = "IkO-we-Dqw"; */
+"IkO-we-Dqw.title" = "Veriff";
+
+/* Class = "UIButton"; normalTitle = "Start Veriffy"; ObjectID = "S8p-Up-AFi"; */
+"S8p-Up-AFi.normalTitle" = "Start Veriffy";
+
+/* Class = "UIButton"; normalTitle = "Scan a QR Code"; ObjectID = "b3i-lY-Afy"; */
+"b3i-lY-Afy.normalTitle" = "Scan a QR Code";
+
+/* Class = "UILabel"; text = "Current QR Code"; ObjectID = "xDw-Oa-aeK"; */
+"xDw-Oa-aeK.text" = "Current QR Code";

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  VeriffTest
+
+  Created by Vahe on 9/29/18.
+  Copyright © 2018 Vahe. All rights reserved.
+*/
+
+"alert.title" = "Alert!";
+"scan.qr.code" = "At first you'll need to scan a QR code. Please, scan it!";
+"open.app.title" = "Open App";
+"confirm.title" = "Confirm";
+"cancel.title" = "Cancel";
+"ok.title" = "OK";
+"token.question" = "Do you want to use this token?";

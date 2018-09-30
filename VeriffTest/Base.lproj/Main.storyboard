@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vgb-4a-E8J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Veriff-->
+        <scene sceneID="ziw-rh-BY7">
+            <objects>
+                <viewController id="yVh-Ow-0fL" customClass="InitialViewController" customModule="VeriffTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YZf-4B-3fP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-lY-Afy">
+                                <rect key="frame" x="131.5" y="86" width="112" height="30"/>
+                                <state key="normal" title="Scan a QR Code"/>
+                                <connections>
+                                    <action selector="scanQRTapped:" destination="yVh-Ow-0fL" eventType="touchUpInside" id="Ovq-2c-6WC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u5Y-i6-6mN">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yVh-Ow-0fL" id="OAN-wK-M1S"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDw-Oa-aeK">
+                                <rect key="frame" x="16" y="141" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8s6-3y-hAN">
+                                <rect key="frame" x="65" y="235" width="245" height="29"/>
+                                <segments>
+                                    <segment title="Sandbox"/>
+                                    <segment title="Staging"/>
+                                    <segment title="Production"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-Up-AFi">
+                                <rect key="frame" x="146" y="318.5" width="83" height="30"/>
+                                <state key="normal" title="Start Veriffy"/>
+                                <connections>
+                                    <action selector="startVeriffyTapped:" destination="yVh-Ow-0fL" eventType="touchUpInside" id="cfJ-hc-9Bg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S8p-Up-AFi" firstAttribute="centerY" secondItem="YZf-4B-3fP" secondAttribute="centerY" id="8aH-Uz-guk"/>
+                            <constraint firstItem="8s6-3y-hAN" firstAttribute="top" secondItem="u5Y-i6-6mN" secondAttribute="bottom" constant="35" id="94E-ia-qNd"/>
+                            <constraint firstItem="S8p-Up-AFi" firstAttribute="centerX" secondItem="YZf-4B-3fP" secondAttribute="centerX" id="CaA-Lj-UXc"/>
+                            <constraint firstItem="8s6-3y-hAN" firstAttribute="centerX" secondItem="YZf-4B-3fP" secondAttribute="centerX" id="E5v-vf-Alg"/>
+                            <constraint firstItem="ss1-kp-b9p" firstAttribute="trailing" secondItem="u5Y-i6-6mN" secondAttribute="trailing" constant="16" id="EoB-le-Mev"/>
+                            <constraint firstItem="b3i-lY-Afy" firstAttribute="top" secondItem="ss1-kp-b9p" secondAttribute="top" constant="22" id="N92-Cj-ZHl"/>
+                            <constraint firstItem="xDw-Oa-aeK" firstAttribute="top" secondItem="b3i-lY-Afy" secondAttribute="bottom" constant="25" id="NxU-rB-Gpz"/>
+                            <constraint firstItem="u5Y-i6-6mN" firstAttribute="leading" secondItem="ss1-kp-b9p" secondAttribute="leading" constant="16" id="SrH-6W-bs6"/>
+                            <constraint firstItem="xDw-Oa-aeK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u5Y-i6-6mN" secondAttribute="leading" id="bLP-ta-Bqf"/>
+                            <constraint firstItem="b3i-lY-Afy" firstAttribute="centerX" secondItem="YZf-4B-3fP" secondAttribute="centerX" id="opw-iI-ymA"/>
+                            <constraint firstItem="ss1-kp-b9p" firstAttribute="trailing" secondItem="xDw-Oa-aeK" secondAttribute="trailing" constant="227" id="ozH-D9-heW"/>
+                            <constraint firstItem="u5Y-i6-6mN" firstAttribute="top" secondItem="xDw-Oa-aeK" secondAttribute="bottom" constant="8" id="ycw-kT-MKc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ss1-kp-b9p"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Veriff" id="IkO-we-Dqw"/>
+                    <connections>
+                        <outlet property="qrCodeField" destination="u5Y-i6-6mN" id="D5b-5u-79B"/>
+                        <outlet property="segmentedControl" destination="8s6-3y-hAN" id="fyw-av-7Jx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TM6-HI-0HW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GNu-2L-uRr">
+            <objects>
+                <navigationController storyboardIdentifier="InitialScreenStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="vgb-4a-E8J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nmn-6S-voN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yVh-Ow-0fL" kind="relationship" relationship="rootViewController" id="hQc-KI-dg2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8EV-E4-ExG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
